@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">TestTwitterClient</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_photos">Flickr Photos</string>
+    <string name="login_label">Log in</string>
+    <string name="btnShare">share</string>
+    <string name="loginTwitterStr">login with Twitter</string>
+    <string name="txtPleaseLoginStr">Please, login with:</string>
+    <string name="twitterLoginBtnStr">Twitter</string>
+    <string name="ifYouWantTxtStr">and with (if you want to share):</string>
+    <string name="FaceBookBtnStr">FaceBook</string>
+    <string name="youCanStr">Now, you can:</string>
+    <string name="showLadyGagaTweetsStr">Show Lady Gaga tweets</string>
+    <string name="app_id">618960514871708</string>
+    <string name="facebook_logout">facebook logout</string>
+
+</resources>

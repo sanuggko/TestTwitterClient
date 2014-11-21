@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testtwitterclient">
+    <uses-sdk
+            android:minSdkVersion="12"
+            android:targetSdkVersion="20" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+         <meta-data android:name="com.facebook.sdk.ApplicationId"
+                 android:value="@string/app_id"/>
+
+        <activity android:name="com.example.testtwitterclient.Activities.MainActivity">
+	        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+
+        </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.testtwitterclient.Activities.LoginTwitterActivity"
+                  android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="twClient"
+                        android:scheme="oauth"/>
+            </intent-filter>
+            </activity>
+          <activity android:name="com.example.testtwitterclient.Activities.TimeLineActivity"/>
+			<activity android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.example.testtwitterclient.Activities.LoadPhotoActivity"/>
+    </application>
+
+</manifest>

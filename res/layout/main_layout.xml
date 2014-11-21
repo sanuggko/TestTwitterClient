@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/txtPleaseLoginStr"
+            android:id="@+id/txtPleaseLogin" android:padding="10dp"/>
+    <Button
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="@string/twitterLoginBtnStr"
+            android:id="@+id/btnLoginTwitter"
+            android:layout_gravity="right"
+            android:onClick="onClickButton"
+            android:padding="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ifYouWantTxtStr"
+            android:id="@+id/txtPleaseLogin2"
+            android:padding="10dp"
+            android:visibility="gone"
+            />
+    <com.facebook.widget.LoginButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:text="@string/FaceBookBtnStr"
+            android:visibility="gone"
+            android:onClick="onClickButton"
+            android:id="@+id/authButton" android:layout_gravity="right" android:padding="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/youCanStr"
+            android:visibility="gone"
+            android:id="@+id/txtShowLadyGagaTweets" android:padding="10dp"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showLadyGagaTweetsStr"
+            android:visibility="gone"
+            android:onClick="onClickButton"
+            android:id="@+id/btnShowLadyGagaTweets" android:layout_gravity="center_horizontal" android:padding="10dp"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/facebook_logout"
+            android:visibility="gone"
+            android:id="@+id/btnLogoutFacebook" android:layout_gravity="center_horizontal"/>
+</LinearLayout>
